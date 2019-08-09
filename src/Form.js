@@ -162,7 +162,7 @@ class Form extends React.Component {
             </FormControl>
           </header>
         )}
-        {this.state.currentStep === 2 && (
+        {this.state.currentStep === 3 && (
           <header className="App-header">
             <FormControl component="fieldset">
               <FormLabel
@@ -201,7 +201,85 @@ class Form extends React.Component {
             </FormControl>
           </header>
         )}
-        {this.state.currentStep === 3 && (
+        {this.state.currentStep === 4 && (
+          <header className="App-header">
+            <FormControl component="fieldset">
+              <FormLabel
+                style={{ fontSize: 20, color: "white", marginBottom: 12 }}
+              >
+                What's your current bodyweight? 
+              </FormLabel>
+              <FormGroup>
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={false}
+                      onChange={() => {
+                        this.handleChange("gilad");
+                        this.next();
+                      }}
+                      value="High Blood Pressure"
+                    />
+                  }
+                  label="80-110"
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={false}
+                      onChange={() => {
+                        this.handleChange("gilad");
+                        this.next();
+                      }}
+                      value="jason"
+                    />
+                  }
+                  label="110-150"
+                />
+                 <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={false}
+                      onChange={() => {
+                        this.handleChange("gilad");
+                        this.next();
+                      }}
+                      value="High Blood Pressure"
+                    />
+                  }
+                  label="150-200"
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={false}
+                      onChange={() => {
+                        this.handleChange("gilad");
+                        this.next();
+                      }}
+                      value="jason"
+                    />
+                  }
+                  label="200-240"
+                />
+                <FormControlLabel
+                  control={
+                    <Checkbox
+                      checked={false}
+                      onChange={() => {
+                        this.handleChange("gilad");
+                        this.next();
+                      }}
+                      value="jason"
+                    />
+                  }
+                  label="240+"
+                />
+              </FormGroup>
+            </FormControl>
+          </header>
+        )}
+        {this.state.currentStep === 5 && (
           <header className="App-header">
             <FormControl component="fieldset">
               <FormLabel
